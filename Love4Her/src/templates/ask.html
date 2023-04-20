@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <script src="../js/ask.js"></script>
+    <link rel="stylesheet" href="../styles/ask_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Comfortaa" rel="stylesheet">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const btnYes = document.querySelector('.btn-yes');
+            btnYes.addEventListener('click', () => {
+                window.location.href = "heart.html";
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="text">
+            <p>Hello Vo Thanh Phuong<span class="emoji wave" role="img" aria-label="hand wave"></span></p>
+            <p>I wanna say that I love you</p>
+            <p>Will you give me a chance to be your boyfriend?</p>
+        </div>
+        <div class="buttonGroup">
+            <button class="btn-yes" id="yes">YES</button>
+            <button class="btn-no">NO</button>
+        </div>
+    </div>
+</body>
+
+</html>

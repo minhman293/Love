@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa;
+    background-color: rgb(100, 240, 165);
+}
+
+.mainContent {
+    width: 100%;
+    margin: 100px auto;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.text p {
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 25px;
+    background-color: rgb(91, 187, 255);
+    border: none;
+    margin: 30px 20px;
+    border-radius: 10px;
+    position: absolute;
+    font-weight: bold;
+    width: 75px;
+    height: 35px;
+}
+
+.btn-yes {
+    right: 50%;
+}
+
+button:hover {
+    background-color: rgb(18, 118, 233);
+    color: white;
+}
+
+.emoji {
+    /* font-size: calc(100px + 4vw); */
+    font-size: 40px;
+    min-width: 1.4em;
+    margin: 0.3em 0.4em;
+    text-align: center;
+}
+
+.emoji::after {
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wave::after {
+    content: '✋';
+    --emoji: '👋';
+    animation-name: twoFrames;
+    animation-duration: 1s;
+}
+
+@keyframes twoFrames {
+    50% {
+        content: var(--emoji);
+    }
+}
